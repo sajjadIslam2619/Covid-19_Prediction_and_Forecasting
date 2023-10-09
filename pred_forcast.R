@@ -10,9 +10,8 @@ library(cluster)
 library(forecast)
 
 
-# Data file attached with the submission files. Data can be also be found in:https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset
-# Please change local directory before execution. 
-data<-read.csv(file = '/Users/sajjadislam/Documents/Academic Projects/Data analytics/Project 2/covid_19_data.csv', header=TRUE, stringsAsFactors=FALSE)
+# Data can be found in:https://www.kaggle.com/datasets/sudalairajkumar/novel-corona-virus-2019-dataset
+data<-read.csv(file = 'covid_19_data.csv', header=TRUE, stringsAsFactors=FALSE)
 #dim(data)
 # Remove row with empty value.
 data <- na.omit(data)
