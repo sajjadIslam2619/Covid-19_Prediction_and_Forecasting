@@ -7,7 +7,7 @@ rm(list=ls())
 library(forecast) 
 
 # Data file local directory. Data can be found in: 
-data<-read.csv(file = '/Users/sajjadislam/Documents/Academic Projects/Data analytics/Project 2/covid_19_data.csv', header=TRUE, stringsAsFactors=FALSE)
+data<-read.csv(file = 'covid_19_data.csv', header=TRUE, stringsAsFactors=FALSE)
 View(data)
 
 data$ObservationDate <- as.Date(data$ObservationDate, format = "%m/%d/%Y")
